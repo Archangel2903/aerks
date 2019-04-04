@@ -2,25 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb8e305e-f3aa-40d1-ba19-e1631dad0c7c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../kraskoff/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/img/loader.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/img/loader.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/img/logo_black.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/img/logo_black.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/img/logo_white.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/img/logo_white.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/js/jquery-3.0.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/base/_fonts.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/base/_fonts.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/base/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/base/_reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/layout/_content.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/layout/_content.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/layout/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/layout/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/layout/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/layout/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/layout/_media.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/layout/_media.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/utils/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/utils/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../kraskoff/scss/utils/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../kraskoff/scss/utils/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+    <ignored path="C:\OpenServer\OSPanel\domains\aerks\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +45,14 @@
           <entry key="html" value="3360" />
           <entry key="js" value="1986" />
           <entry key="scss" value="5209" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="3360" />
           <entry key="JavaScript" value="1986" />
+          <entry key="PLAIN_TEXT" value="1" />
           <entry key="SCSS" value="5209" />
         </counts>
       </usages-collector>
@@ -84,7 +70,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
               <folding>
                 <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -517,17 +503,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+            <state relative-caret-position="245">
+              <caret line="179" selection-start-line="179" selection-end-line="179" />
               <folding>
                 <element signature="e#27#239#0" expanded="true" />
                 <element signature="n#!!block;n#viewport#0" expanded="true" />
+                <element signature="e#546#5836#0" expanded="true" />
                 <element signature="e#572#876#0" />
                 <element signature="e#1083#1609#0" />
                 <element signature="e#1667#4747#0" />
                 <element signature="e#1957#3476#0" expanded="true" />
                 <element signature="e#4105#4739#0" expanded="true" />
-                <element signature="e#8791#9109#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -561,6 +547,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Archangel2903 &lt;archangel2903@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="ROOT_SYNC" value="SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -664,12 +655,12 @@
       <updated>1553710688307</updated>
       <workItem from="1553710690424" duration="12727000" />
       <workItem from="1553778965743" duration="51262000" />
-      <workItem from="1554206400627" duration="46116000" />
+      <workItem from="1554206400627" duration="46814000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="110105000" />
+    <option name="totallyTimeSpent" value="110803000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,11 +685,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329849" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329849" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.329849" />
       <window_info anchor="bottom" id="File Transfer" order="9" weight="0.329849" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.329849" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49946293" weight="0.329849" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053704" side_tool="true" weight="0.329849" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1221,7 +1212,7 @@
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
           <folding>
             <element signature="n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#header#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -1570,17 +1561,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+        <state relative-caret-position="245">
+          <caret line="179" selection-start-line="179" selection-end-line="179" />
           <folding>
             <element signature="e#27#239#0" expanded="true" />
             <element signature="n#!!block;n#viewport#0" expanded="true" />
+            <element signature="e#546#5836#0" expanded="true" />
             <element signature="e#572#876#0" />
             <element signature="e#1083#1609#0" />
             <element signature="e#1667#4747#0" />
             <element signature="e#1957#3476#0" expanded="true" />
             <element signature="e#4105#4739#0" expanded="true" />
-            <element signature="e#8791#9109#0" expanded="true" />
           </folding>
         </state>
       </provider>
