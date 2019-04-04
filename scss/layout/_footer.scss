@@ -1,0 +1,99 @@
+/***********************************************************
+*************************** FOOTER *************************
+***********************************************************/
+footer {
+  order: 3;
+  -webkit-order: 3;
+  width: 100%;
+  min-width: $min-width;
+  padding: 40px 0 100px;
+  color: $text-color-invert;
+  text-align: left;
+  background: #0a2145;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 40px;
+
+  &__box {
+
+  }
+  &__caption {
+    padding: 0;
+    margin: 0 0 25px;
+    font-size: 1em;
+  }
+  &__nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  &__nav-link {
+    display: block;
+    width: max-content;
+    color: $second-text-color !important;
+    font-size: 1em;
+    line-height: 22px;
+    text-decoration: none;
+  }
+
+  .logo {
+    margin: 0 0 30px;
+    &:hover {
+      color: $site-color;
+    }
+  }
+
+  .contacts-box {
+    &:not(:last-of-type) {
+      margin-bottom: 10px;
+    }
+    &__caption {
+      margin-bottom: 8px;
+      color: $text-color-invert;
+      line-height: 1;
+    }
+    &__list {
+      padding: 0;
+      &-item {
+        line-height: 1;
+      }
+    }
+  }
+}
+
+.subscribe-form {
+  &__label {
+
+  }
+  &__label-text {
+    display: block;
+    margin: 0 0 20px;
+    font-size: 1em;
+  }
+  &__field {
+    display: block;
+    width: 100%;
+    padding: 18px 15px;
+    border: 1px solid #8492A6;
+    border-radius: 4px;
+    color: $second-text-color;
+    font-size: 1em;
+    background: none;
+
+    /*&::-webkit-input-placeholder {
+      color: $second-text-color;
+    }
+    &::-moz-placeholder {
+      color: $second-text-color;
+    }
+    &::-ms-input-placeholder {
+      color: $second-text-color;
+    }
+    &::placeholder {
+      color: $second-text-color;
+    }*/
+  }
+}

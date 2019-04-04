@@ -1,0 +1,114 @@
+/***********************************************************
+*************************** HEADER *************************
+***********************************************************/
+header {
+  order: 1;
+  -webkit-order: 1;
+  width: 100%;
+  min-width: $min-width;
+  text-align: left;
+  -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, .17);
+  -moz-box-shadow: 0 0 32px 0 rgba(0, 0, 0, .17);
+  box-shadow: 0 0 32px 0 rgba(0, 0, 0, .17);
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
+  text-decoration: none !important;
+  &__img {
+    display: inline-block;
+  }
+  &__text {
+    display: inline-block;
+    padding: 0 1.875rem;
+    font-size: .875em;
+    b {
+      display: block;
+      font-size: 1.125em;
+    }
+  }
+
+  &:hover {
+
+  }
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: stretch;
+  align-items: center;
+  padding: .625rem 0;
+
+  .logo {
+    color: #1e0203;
+  }
+
+  &__content {
+
+  }
+  &__contacts {
+    display: inline-flex;
+    li {
+      margin-right: 100px;
+      .icon {
+        display: inline-block;
+        margin-right: 25px;
+        vertical-align: middle;
+        color: $main-text-color;
+        font-size: 22px;
+      }
+    }
+    &-link {
+      color: $main-text-color !important;
+      text-decoration: none;
+    }
+  }
+}
+
+.header-menu {
+  padding: 15px;
+
+  &__burger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 3px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin: 0;
+    background: none;
+    &-line {
+      height: 2px;
+      margin: 4px 0;
+      &_1 {}
+      &_2 {}
+      &_3 {}
+    }
+
+    &:hover {
+
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+  }
+  &__link {
+    margin: 0 15px;
+    color: $main-text-color !important;
+    text-decoration: none !important;
+  }
+}

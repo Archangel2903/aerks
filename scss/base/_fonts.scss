@@ -1,0 +1,93 @@
+$gotham-pro: '../fonts/GothamPro';
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url($gotham-pro + '.eot');
+  src: url($gotham-pro + '.eot?#iefix') format('embedded-opentype'),
+  url($gotham-pro + '.woff2') format('woff2'),
+  url($gotham-pro + '.woff') format('woff'),
+  url($gotham-pro + '.ttf') format('truetype'),
+  url($gotham-pro + '.svg#GothamPro') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Icons
+$icomoon-font-family: "icons" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-reply: "\e900";
+$icon-call: "\e901";
+$icon-mail-closed: "\e90a";
+$icon-flags: "\e902";
+$icon-call-answer: "\e903";
+$icon-user: "\e904";
+$icon-chevron-left: "\e905";
+$icon-chevron-right: "\e906";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8kmby3');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?8kmby3#iefix') format('embedded-opentype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?8kmby3') format('truetype'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?8kmby3') format('woff'),
+  url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?8kmby3##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-reply {
+  &:before {
+    content: $icon-reply;
+  }
+}
+.icon-call {
+  &:before {
+    content: $icon-call;
+  }
+}
+.icon-mail-closed {
+  &:before {
+    content: $icon-mail-closed;
+  }
+}
+.icon-flags {
+  &:before {
+    content: $icon-flags;
+  }
+}
+.icon-call-answer {
+  &:before {
+    content: $icon-call-answer;
+  }
+}
+.icon-user {
+  &:before {
+    content: $icon-user;
+  }
+}
+.icon-chevron-left {
+  &:before {
+    content: $icon-chevron-left;
+  }
+}
+.icon-chevron-right {
+  &:before {
+    content: $icon-chevron-right;
+  }
+}
