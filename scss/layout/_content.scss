@@ -206,8 +206,7 @@
 
   &__custom-nav {
     position: relative;
-    display: inline-block;
-    //padding: 0 35px;
+    display: block;
   }
 
   &__count {
@@ -283,9 +282,9 @@
     object-position: center;
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 0;
     z-index: -1;
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
   }
 }
 
@@ -324,7 +323,9 @@
 
   &__box {
     display: inline-flex;
+    justify-content: center;
     align-items: center;
+    width: 25%;
     padding: 0 45px 25px;
     &:not(:first-child) {
       border-left: 1px solid #e0e3e6;
@@ -473,12 +474,15 @@
     }
   }
   &__title {
-    padding: 0;
+    position: relative;
+    padding: 0 20px 0 0;
     font-weight: bold;
     font-size: 1.125em;
     &:after {
       content: '+';
-      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 0;
       display: inline-block;
       width: 18px;
       height: 18px;
@@ -486,6 +490,8 @@
       font-size: 1.5em;
       line-height: 18px;
       text-align: center;
+      cursor: pointer;
+      transform: translateY(-50%);
     }
 
     &.active {
@@ -494,8 +500,11 @@
       }
     }
   }
-  &__text {
+  &__item-content {
     display: none;
+  }
+  &__text {
+    display: block;
     padding: 25px 80px 0 0;
     color: $second-text-color;
     font-size: .875em;
@@ -523,8 +532,8 @@
 
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(auto, 590px));
-  grid-gap: 0 100px;
+  grid-template-columns: repeat(auto-fit, minmax(48%, auto));
+  justify-content: space-between;
 
   &__box {
 
@@ -541,14 +550,14 @@
   &__list {
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(42%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(47%, auto));
   }
   &__list-item {
     position: relative;
     padding: 0 5px;
     font-size: .875em;
     line-height: 22px;
-    white-space: nowrap;
+    //white-space: nowrap;
     &:after {
       content: '';
       position: absolute;
@@ -647,7 +656,8 @@
 .cases {
   .slider {
     &__item {
-      display: flex !important;
+      display: flex;
+      align-items: center;
       padding: 80px 0 0;
     }
     &__custom-nav {
@@ -658,7 +668,7 @@
   }
   &__slide-img {
     display: inline-block;
-    height: 340px;
+    width: 50%;
   }
   &__slide-description {
     padding: 0 0 0 65px;
@@ -698,6 +708,7 @@
   .slider {
     &__item {
       display: flex !important;
+      align-items: flex-start;
     }
     &__custom-nav {
       position: absolute;
@@ -752,6 +763,55 @@
     &-link {
       padding: 19px 60px;
       font-family: Cambria,serif;
+    }
+  }
+}
+
+.section-blog-article {
+  padding: 70px 0 185px;
+}
+
+.blog-article {
+  font-family: $custom-font-family;
+
+  &__head {
+    margin: 0 0 60px;
+  }
+  &__title {
+    font-weight: 900;
+    font-size: 1.875em;
+  }
+  &__info {
+    &-text {
+      display: inline-block;
+      color: #a5a5a5;
+      font-size: 1.125em;
+      &:not(:first-child) {
+        padding-left: 25px;
+        border-left: 1px solid #d1d1d1;
+        margin-left: 25px;
+      }
+    }
+  }
+  &__content {
+
+  }
+  &__image {
+    display: block;
+    width: 100%;
+    margin: 0 0 75px;
+    object-fit: contain;
+    object-position: center;
+  }
+  &__text {
+    padding: 0;
+    margin: 45px 0;
+    color: #a5a5a5;
+    font-size: 1.125em;
+    line-height: 30px;
+
+    &:last-of-type {
+      margin: 45px 0 0;
     }
   }
 }
@@ -863,8 +923,9 @@
 .contacts-box {
   color: $second-text-color;
   &:not(:last-of-type) {
-    margin: 0 0 45px;
+    margin-bottom: 45px;
   }
+
   &__caption {
     padding: 0;
     margin: 0 0 15px;

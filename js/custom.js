@@ -23,6 +23,7 @@ function viewport() {
 /* viewport width */
 $(function () {
     /* placeholder*/
+
     /*$('input, textarea').each(function () {
         var placeholder = $(this).attr('placeholder');
         $(this).focus(function () {
@@ -32,13 +33,8 @@ $(function () {
             $(this).attr('placeholder', placeholder);
         });
     });*/
-    /* placeholder*/
 
-    $('.button-nav').click(function () {
-        $(this).toggleClass('active'),
-            $('.main-nav-list').slideToggle();
-        return false;
-    });
+    /* placeholder*/
 
     /* components */
 
@@ -152,6 +148,11 @@ $(function () {
             }
         });
     }
+
+    $('.header-menu__burger').on('click', function () {
+        $(this).toggleClass('active');
+        $('.header-menu__list').toggleClass('opened');
+    });
 
     /* FAQ list items */
     /*var faqText = $('.faq__text'),

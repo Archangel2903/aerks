@@ -11,22 +11,369 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
-
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    padding: 0 20px;
+  }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1200px) {
+  .header-top {
+    &__contacts {
+      li {
+        margin-right: 30px;
+        .icon {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 1024px) {
+  .header-menu {
+    &__list {
+      flex-direction: column;
+      position: absolute;
+      top: -200%;
+      left: 0;
+      width: 100%;
+      padding: 60px 0;
+      background: rgba(0, 0, 0, .85);
+      transform: rotateX(90deg);
+      transition: $default-transition;
+      z-index: 100;
+      &.opened {
+        top: 0;
+        transform: rotateX(0deg);
+
+        .header-menu__link {
+          opacity: 1;
+          transform: translateY(0%);
+        }
+      }
+    }
+    &__link {
+      margin: 10px 15px;
+      opacity: 0;
+      color: $text-color-invert;
+      transform: translateY(-100%);
+    }
+    &__burger {
+      display: block;
+      margin-left: auto;
+    }
+  }
+  @for $i from 1 through 7 {
+    .header-menu__list.opened {
+      .header-menu__link {
+        &:nth-child(#{$i}) {
+          transition: all 0.25s ease-in-out .3s * ($i / 2);
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 991px) {
+  .slider {
+    &__custom-nav {
+      text-align: center;
+    }
+  }
 
+  .header-top {
+    flex-direction: column;
+    &__content {
+      text-align: center;
+    }
+    &__contacts {
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: stretch;
+
+      li {
+        margin: 0 15px 15px;
+      }
+    }
+
+    .logo {
+      margin: 0 0 20px;
+    }
+  }
+
+  .header-menu {
+    padding: 0;
+
+    &__burger {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+    }
+  }
+
+  .main-section {
+    padding: 60px 0;
+  }
+
+  .main-section-content {
+    .slider {
+      width: 100%;
+      max-width: none;
+      margin: 0 0 60px;
+    }
+
+    .form {
+      width: 100%;
+      max-width: 570px;
+      margin: 0 auto;
+
+      &__submit {
+        width: 100%;
+      }
+    }
+  }
+
+  .main-advantages {
+    padding: 30px 0;
+  }
+
+  .advantages {
+    &__box {
+      flex-direction: column;
+      padding: 25px 45px;
+      text-align: center;
+    }
+    &__text {
+      padding: 15px 0 0;
+    }
+  }
+
+  .main-about-us {
+    padding: 60px 0;
+
+    .about-us {
+      &__content {
+        width: auto;
+        max-width: none;
+        margin: 0 0 30px;
+      }
+    }
+  }
+
+  .about-us {
+    &__content {
+
+    }
+    .slider {
+      width: 100%;
+      max-width: none;
+    }
+  }
+
+  .faq {
+    &__text {
+      padding: 25px 0 0;
+    }
+  }
+
+  .main-services {
+    padding: 60px 0;
+  }
+
+  .services {
+    grid-template-columns: repeat(auto-fit, minmax(100%, auto));
+    grid-row-gap: 40px;
+
+    &__list {
+      grid-template-columns: repeat(auto-fill, minmax(48%, auto));
+    }
+  }
+
+  .main-cases {
+    padding: 60px 0;
+  }
+
+  .cases {
+    .slider {
+      &__item {
+        flex-direction: column;
+      }
+      &__custom-nav {
+        position: inherit;
+        padding: 30px 0;
+      }
+    }
+    &__slide-img {
+      width: 100%;
+      padding: 0 30px;
+    }
+    &__slide-description {
+      padding: 65px 0 0;
+      margin: 0;
+    }
+    &__slide-title {
+      margin: 0 0 45px;
+    }
+  }
+
+  .main-blog {
+    padding: 60px 0;
+  }
+
+  .blog {
+    .slider {
+      &__item {
+        flex-direction: column;
+        align-items: center;
+      }
+      &__custom-nav {
+        padding: 30px 0;
+        position: relative;
+      }
+    }
+    &__slide-description {
+      padding: 20px 40px 0;
+    }
+  }
+
+  .section-blog {
+    padding: 60px 0;
+  }
+
+  .blog-list {
+    grid-gap: 1%;
+    grid-template-columns: repeat(auto-fill, minmax(49%, auto));
+  }
+
+  .blog-item {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    &__date {
+      padding: 10px 0 0;
+      border: none;
+      border-top: 1px solid #d1d1d1;
+      margin: 10px 0 0;
+    }
+  }
+
+  .main-reviews {
+    padding: 60px 0;
+  }
+
+  .reviews {
+    .slider {
+      &__item {
+        padding: 0 0 50px;
+      }
+      &__custom-nav {
+        padding: 30px 0;
+        position: relative;
+      }
+    }
+  }
+
+  .main-contacts {
+    padding: 60px 0;
+  }
+
+  .contacts {
+    flex-direction: column;
+    align-content: center;
+
+    .form {
+      width: 100%;
+      max-width: 570px;
+      margin: 0 auto;
+    }
+    &__content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      padding: 60px 0 0;
+    }
+  }
+
+  .contacts-box {
+    min-width: 225px;
+    margin: 0 15px;
+  }
+
+  footer {
+    padding: 60px 0;
+  }
+
+  .footer-content {
+    grid-gap: 40px;
+    grid-template-columns: auto;
+    text-align: center;
+
+    &__nav {
+      align-items: center;
+    }
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-
+@media screen and (max-width: 800px) {
+  grid-template-columns: repeat(auto-fit, minmax(30%, auto));
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
+  .advantages {
+    &__box {
+      width: 50%;
 
+      &:not(:first-child) {
+        border: none;
+        //border-top: 1px solid #e0e3e6;
+      }
+    }
+  }
+
+  .faq {
+    &__content {
+      grid-gap: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(46%, auto));
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .blog-list {
+    grid-template-columns: repeat(auto-fill, minmax(100%, auto));
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .faq {
+    &__content {
+      grid-template-columns: repeat(auto-fill, minmax(100%, auto));
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .advantages {
+    &__box {
+      width: 100%;
+
+      &:not(:first-child) {
+        border-top: 1px solid #e0e3e6;
+      }
+    }
+  }
+
+  .blog {
+    &__slide-description {
+      padding: 20px 0 0;
+    }
+  }
 }

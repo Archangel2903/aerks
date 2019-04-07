@@ -41,7 +41,7 @@ header {
 .header-top {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-content: stretch;
   align-items: center;
@@ -74,9 +74,10 @@ header {
 }
 
 .header-menu {
-  padding: 15px;
+  padding: 15px 0;
 
   &__burger {
+    position: relative;
     display: none;
     width: 30px;
     height: 30px;
@@ -85,6 +86,8 @@ header {
     border-radius: 4px;
     margin: 0;
     background: none;
+    transition: $default-transition;
+    z-index: 101;
     &-line {
       height: 2px;
       margin: 4px 0;
@@ -93,22 +96,30 @@ header {
       &_3 {}
     }
 
-    &:hover {
+    &.active {
+      border-color: #ffffff;
+      z-index: 101;
 
+      .header-menu__burger-line {
+        background: #fff;
+      }
     }
   }
 
   &__list {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
     align-content: stretch;
     align-items: stretch;
   }
   &__link {
     margin: 0 15px;
-    color: $main-text-color !important;
+    color: $main-text-color;
     text-decoration: none !important;
+    &:hover {
+      color: $site-color;
+    }
   }
 }
