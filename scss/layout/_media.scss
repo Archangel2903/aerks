@@ -354,8 +354,14 @@
 @media screen and (max-width: 540px) {
   .faq {
     &__content {
+      grid-gap: 0;
       grid-template-columns: repeat(auto-fill, minmax(100%, auto));
       justify-content: center;
+    }
+    &__box:not(:first-child) {
+      .faq__item:first-of-type {
+        border-top: none;
+      }
     }
   }
 }
